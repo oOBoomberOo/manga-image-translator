@@ -100,5 +100,5 @@ if __name__ == '__main__':
         print('\nTranslation cancelled by user.')
         sys.exit(0)
     except Exception as e:
-        logger.error(f'{e.__class__.__name__}: {e}',
+        logger.error(f'{e.__class__.__name__}: {e}', # type: ignore
                      exc_info=e if args and args.verbose else None)
